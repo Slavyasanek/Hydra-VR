@@ -1,21 +1,21 @@
 {
-  "name": "hydra",
+  "name": "hydra-vr",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://slavyasanek.github.io/Hydra",
+  "homepage": "https://slavyasanek.github.io/Hydra-vr",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Hydra/"
+    "build": "parcel build src/*.html --public-url /Hydra-VR/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Slavyasanek/hydra.git"
+    "url": "git+https://github.com/Slavyasanek/Hydra-VR.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/slavyasanek/hydra/issues"
+    "url": "https://github.com/slavyasanek/hydra-vr/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
