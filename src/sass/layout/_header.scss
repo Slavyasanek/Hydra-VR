@@ -1,0 +1,49 @@
+.header {
+  padding-top: 26px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 11px;
+  }
+  &__icon {
+    &-logo {
+      cursor: pointer;
+      fill: url('#paint');
+      transform: scale(1.38, 1.19);
+    }
+    &-hydra {
+      fill: url('#paint');
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+  }
+  &__btns {
+    @include max_767 {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  @include max_767 {
+    display: none;
+  }
+}
+
+.mobile-menu {
+    &__open {
+        fill: url('#paint--reverse');
+        @include min_768 {
+            display: none;
+        }
+    }
+}

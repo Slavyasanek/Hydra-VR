@@ -1,24 +1,49 @@
 <header class="header">
-    <div class="container">
-        <div class="header__logo">
+  <div class="container header--flex">
+    <div class="header__logo">
+        <a href="./">
             <svg width="69" height="60" class="header__icon-logo">
+                <defs>
+                  <linearGradient
+                    id="paint"
+                    x1="34.5"
+                    y1="0.664764"
+                    x2="34.5"
+                    y2="60.5492"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="var(--light-gradiend-and-decorative-purple)" />
+                    <stop offset="1" stop-color="var(--dark-gradiend-putple)" />
+                  </linearGradient>
+                </defs>
                 <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
+              </svg>
+        </a>
+        <a href="./">
             <svg width="46" height="28" class="header__icon-hydra">
                 <use href="./images/icons.svg#icon-hydra"></use>
-            </svg>
-        </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="./#about">about</a></li>
-                <li class="nav__item"><a href="./#services">services</a></li>
-                <li class="nav__item"><a href="./#technologies">technologies</a></li>
-                <li class="nav__item"><a href="./#how-to">how to</a></li>
-            </ul>
-        </nav>
-        <div class="header__btns">
-           <a href="tel:11011111010" class="btn--transparent">contact us</a>
-           <button type="button" class="btn--gradient">join hydra</button>
-        </div>
+              </svg>
+        </a>
     </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./#about">about</a></li>
+        <li class="nav__item"><a href="./#services">services</a></li>
+        <li class="nav__item"><a href="./#technologies">technologies</a></li>
+        <li class="nav__item"><a href="./#how-to">how to</a></li>
+      </ul>
+    </nav>
+    <div class="header__btns">
+      <a href="tel:11011111010" class="btn--transparent">contact us</a>
+      <button type="button" class="btn--gradient">join hydra</button>
+    </div>
+    <svg width="33" height="26" class="js-menu-open mobile-menu__open">
+        <defs>
+            <linearGradient id="paint--reverse" x1="5.21062" y1="13" x2="33.0001" y2="13" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C0B7E8"/>
+                <stop offset="1" stop-color="#8176AF"/>
+                </linearGradient>
+        </defs>
+      <use href="./images/icons.svg#icon-menu-burg"></use>
+    </svg>
+  </div>
 </header>
