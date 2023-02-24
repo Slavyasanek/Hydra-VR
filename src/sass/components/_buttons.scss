@@ -1,0 +1,39 @@
+.btn--transparent {
+  border: 2px solid var(--main-font-color-white);
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 154px;
+  height: 48px;
+  text-transform: uppercase;
+  @extend %flex-center;
+  transition: all 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    color: var(--main-bcg);
+    background-color: var(--main-font-color-white);
+  }
+}
+
+.btn--gradient {
+  @extend %flex-center;
+  background-image: linear-gradient(
+    to left,
+    var(--light-gradiend-and-decorative-purple),
+    var(--dark-gradiend-putple)
+  );
+  color: var(--additional-font-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.25;
+  border-radius: 40px;
+  transition: all 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    color: var(--dark-gradient-violet);
+  }
+}
