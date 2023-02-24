@@ -4,6 +4,10 @@ html {
 
 body {
     min-width: 390px;
+    background-color: var(--main-bcg);
+    color: var(--main-font-color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 ul, ol {
