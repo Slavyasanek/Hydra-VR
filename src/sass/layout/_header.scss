@@ -1,10 +1,13 @@
 .header {
   padding-top: 26px;
+  padding-bottom: 15px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 2;
-  background-color: inherit;
+  &--background {
+    background-color: var(--dark-gradient-light-color);
+  }
   @include min_768 {
     padding-top: 40px;
   }
