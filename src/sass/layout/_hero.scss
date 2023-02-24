@@ -1,18 +1,40 @@
 .hero {
   padding-top: 134px;
+  @include min_768 {
+    padding-top: 190px;
+  }
+  @include min_1440 {
+    padding-top: 251px;
+  }
+  &--flex {
+    @include min_768 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
   &__img {
     border-radius: 100px 100px 100px 240px;
     background-color: var(--transparent-dark-for-bcg);
-    max-width: 340px;
+    width: 340px;
+    height: auto;
+    @include min_1440 {
+        width: 524px;
+    }
     & > img {
-      // object-fit: fill;
-      object-position: center;
       transform: scale(0.94);
       border-radius: 100px 100px 100px 240px;
     }
   }
   &__text {
     margin-top: 40px;
+    @include min_768 {
+      max-width: 350px;
+    }
+    @include min_1440 {
+      max-width: 456px;
+    }
   }
   &__title {
     font-size: 24px;
@@ -28,6 +50,12 @@
         var(--dark-gradiend-putple),
         var(--light-gradiend-and-decorative-purple)
       );
+      @include min_768 {
+        font-size: 36px;
+      }
+      @include min_1440 {
+        font-size: 46px;
+      }
       &--first {
         font-size: 36px;
         background-image: linear-gradient(
@@ -35,10 +63,28 @@
           var(--dark-gradiend-putple),
           var(--light-gradiend-and-decorative-purple)
         );
+        @include min_768 {
+          font-size: 40px;
+        }
+        @include min_1440 {
+          font-size: 46px;
+        }
       }
+    }
+    @include min_768 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      text-align: left;
+    }
+    @include min_1440 {
+      font-size: 40px;
+      line-height: 1.225;
     }
   }
   &__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
     @include max_767 {
       display: none;
     }
@@ -47,14 +93,37 @@
     margin-top: 36px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 11px;
+    @include min_1440 {
+        justify-content: start;
+        margin-top: 40px;
+    }
   }
   &__btn {
     width: 292px;
     height: 52px;
+    @include min_1440 {
+        width: 214px;
+        height: 48px;
+    }
   }
   &__arrow {
     @include max_767 {
       display: none;
     }
+    animation-name: arrow;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
   }
 }
