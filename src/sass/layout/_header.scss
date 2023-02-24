@@ -21,6 +21,9 @@
     display: flex;
     align-items: center;
     gap: 11px;
+    @include min_1440 {
+      gap: 15px;
+    }
   }
   &__icon {
     &-logo {
