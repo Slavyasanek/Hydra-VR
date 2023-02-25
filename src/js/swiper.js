@@ -1,6 +1,6 @@
 const sliderCreate = () => {
-  const sliderContacts = document.querySelector('[data-slider="slider-connect"]');
-  const sliderServices = document.querySelector('[data-slider="slider-services"]');
+  let sliderContacts = document.querySelector('[data-slider="slider-connect"]');
+  let sliderServices = document.querySelector('[data-slider="slider-services"]');
 
   if (window.matchMedia('(min-width: 1440px)').matches) {
     const swipers = document.querySelectorAll('.swiper');
@@ -16,7 +16,7 @@ const sliderCreate = () => {
     sliderServices.removeAttribute('data-slider');
 
   } else {
-    sliderConnect = new Swiper('[data-slider="slider-connect"]', {
+    sliderContacts = new Swiper('[data-slider="slider-connect"]', {
       speed: 1500,
       loop: true,
       navigation: {
