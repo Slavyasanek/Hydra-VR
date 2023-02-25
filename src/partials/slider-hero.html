@@ -1,28 +1,45 @@
-<!-- Slider main container -->
-<div class="swiper" height="100">
-  <!-- Additional required wrapper -->
+<div class="swiper connect" data-slider="slider-connect">
   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide" width="250">Slide 1</div>
-    <div class="swiper-slide" width="250" height="100">Slide 2</div>
-    <div class="swiper-slide" width="250" height="100">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-
-<div class="connect">
-  <div class="swiper-wrapper">
-    <div class="connect-slide"></div>
-    <div class="connect-slide"></div>
-    <div class="connect-slide"></div>
+    <div class="connect__slide">
+      <svg width="41" height="61">
+        <use href="./images/icons.svg#icon-location"></use>
+      </svg>
+      <div class="connect__text">
+        <h2 class="connect__text-title">Pay Us a Visit</h2>
+        <a class="connect__text-inner" href="https://goo.gl/maps/aZ6aibqU56v1NMi66">Union St, Seattle, WA 98101, United States</a>
+      </div>
+    </div>
+    <div class="connect__slide">
+      <svg width="59" height="59">
+        <use href="./images/icons.svg#icon-phone"></use>
+      </svg>
+      <div class="connect__text">
+        <h2 class="connect__text-title">Give Us a Call</h2>
+        <a class="connect__text-inner" href="tel:11011111010">(110) 1111-1010</a>
+      </div>
+    </div>
+    <div class="connect__slide">
+      <a class="connect__text-inner" href="mailto:Contact@HydraVTech.com">
+        <svg width="65" height="65">
+          <use href="./images/icons.svg#icon-mail"></use>
+        </svg>
+      </a>
+      <div class="connect__text">
+        <h2 class="connect__text-title">Send Us a Message</h2>
+        <a class="connect__text-inner" href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+      </div>
+    </div>
+    <div class="connect__btns">
+      <div class="swiper-button-prev connect__btn-prev">
+        <svg width="30" height="30">
+          <use href="./images/icons.svg#icon-chevron-circle-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next connect__btn-next">
+        <svg width="30" height="30">
+          <use href="./images/icons.svg#icon-chevron-circle-right"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </div>
