@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-  
+    direction: 'horizontal',
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
