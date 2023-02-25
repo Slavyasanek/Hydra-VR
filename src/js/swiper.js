@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/swiper-bundle';
 
 function swiperSlider() {
   const miniSlider = document.querySelectorAll('[data-slider="slider-connect"]');

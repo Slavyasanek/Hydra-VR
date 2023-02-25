@@ -1,0 +1,15 @@
+.connect {
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    var(--dark-gradient-light-color) 0%,
+    var(--dark-gradient-violet) 100%
+  );
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  border-radius: 90px;
+  &__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
