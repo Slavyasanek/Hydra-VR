@@ -3,7 +3,10 @@ const sliderCreate = () => {
 
   if (window.matchMedia('(min-width: 1440px)').matches) {
     document.querySelector('.connect__slider').classList.remove('swiper-wrapper');
+    document.querySelector('.connect').classList.remove('swiper');
     sliderContacts.removeAttribute('data-slider');
+    const slides = document.querySelectorAll('.connect__slide');
+    slides.forEach(slide => slide.classList.remove('swiper-slide'));
   } else {
     sliderConnect = new Swiper('[data-slider="slider-connect"]', {
       speed: 1500,
