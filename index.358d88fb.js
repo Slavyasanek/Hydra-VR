@@ -1,0 +1,2 @@
+const e=document.querySelector(".header");e.offsetTop;window.addEventListener("scroll",(()=>{Number.parseInt(window.pageYOffset)>=190?e.classList.add("header--background"):e.classList.remove("header--background")}));new Swiper('[data-slider="slider-connect"]',{speed:1500,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},spaceBetween:30,autoplay:{delay:2e3,disableOnInteraction:!1}});
+//# sourceMappingURL=index.358d88fb.js.map
