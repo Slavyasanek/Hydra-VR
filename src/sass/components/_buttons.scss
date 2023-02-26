@@ -54,7 +54,11 @@
   border: transparent;
   position: absolute;
   top: 50%;
+  transition: all 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
   @extend %flex-center;
+  &:hover, &:focus, &:active {
+    background: var(--button-backlayer);
+  }
   &::before {
     content: '';
     width: 62px;
