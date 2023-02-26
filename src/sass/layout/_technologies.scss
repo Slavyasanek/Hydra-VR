@@ -89,15 +89,20 @@
   }
 }
 
+
 .technologies__slider {
   margin-top: 20px;
   position: relative;
-  z-index: 2;
+  z-index: -1;
   height: 252px;
   width: auto;
   margin-bottom: 40px;
   @include min_1440 {
     margin-top: 54px;
+  }
+  &-swiper {
+    position: relative;
+    z-index: -1;
   }
   &-slide {
     height: 252px;
