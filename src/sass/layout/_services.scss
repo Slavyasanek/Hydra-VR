@@ -1,7 +1,13 @@
 .services {
   margin-top: 60px;
+  padding-bottom: 56px;
   @include min_1440 {
     margin-top: 111px;
+    padding-bottom: 114px;
+    background-image: url('../images/vector-14-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw 814px;
+    background-position: 0 219px;
   }
 }
 
