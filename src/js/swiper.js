@@ -49,7 +49,7 @@ const sliderCreate = () => {
         }
       },
     });
-    sliderTech = new Swiper('[data-slider="slider-services"]', {
+    sliderTech = new Swiper('[data-slider="slider-tech"]', {
       speed: 1500,
       loop: true,
       navigation: {
