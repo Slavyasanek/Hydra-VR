@@ -1,12 +1,3 @@
-.slider__connect {
-  margin-top: 53px;
-  @include min_768 {
-    margin-top: 20px;
-  }
-  @include min_1440 {
-    margin-top: 103px;
-  }
-}
 
 .hero__slider {
   position: relative;
