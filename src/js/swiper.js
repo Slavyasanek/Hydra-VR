@@ -60,8 +60,8 @@ const sliderCreate = () => {
       speed: 2000,
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.tech-button-next',
+        prevEl: '.tech-button-prev',
       },
       spaceBetween: 0,
       autoplay: {
