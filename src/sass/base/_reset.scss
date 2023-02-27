@@ -32,3 +32,7 @@ a {
 svg {
     flex-shrink: 0;
 }
+
+.disabled {
+    transform: translate3d(0px, 0, 0) !important;
+}
