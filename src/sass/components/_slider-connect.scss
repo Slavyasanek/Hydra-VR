@@ -1,4 +1,3 @@
-
 .hero__slider {
   position: relative;
 }
@@ -25,10 +24,12 @@
   }
   &__slider {
     @include min_1440 {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding-left: 39px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 80px;
     }
   }
   &__slide {
@@ -42,20 +43,18 @@
       }
       @include min_1440 {
         &::before {
-            content: "";
-            height: 117px;
-            width: 1px;
-            background-color: var(--light-purple-decorative-for-borders);
-            margin-right: 47px;
-            margin-left: 42px;
+          content: '';
+          height: 117px;
+          width: 1px;
+          background-color: var(--light-purple-decorative-for-borders);
+          margin-right: 37px;
         }
         &::after {
-            content: "";
-            height: 117px;
-            width: 1px;
-            background-color: var(--light-purple-decorative-for-borders);
-            margin-left: 60px;
-            margin-right: 50px;
+          content: '';
+          height: 117px;
+          width: 1px;
+          background-color: var(--light-purple-decorative-for-borders);
+          margin-left: 50px;
         }
       }
     }
@@ -63,7 +62,14 @@
       gap: 10px;
     }
     @include min_768 {
-        gap: 10px;
+      gap: 10px;
+    }
+    @include min_1440 {
+      max-width: 380px;
+      width: auto;
+      &:not(:first-child) {
+        gap: 20px;
+      }
     }
   }
   &__icon {
@@ -100,11 +106,11 @@
       display: block;
     }
   }
-    &__btns {
-        @include min_1440 {
-            display: none;
-        }
+  &__btns {
+    @include min_1440 {
+      display: none;
     }
+  }
   &__btn {
     background-color: transparent;
     border: transparent;
