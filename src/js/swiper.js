@@ -78,6 +78,28 @@ const sliderCreate = () => {
         }
       },
     });
+    const sliderProc = new Swiper('[data-slider="slider-process"]', {
+      speed: 2000,
+      loop: true,
+      navigation: {
+        nextEl: '.process-button-next',
+        prevEl: '.process-button-prev',
+      },
+      spaceBetween: 0,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        }
+      },
+    });
   }
 }
 
