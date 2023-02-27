@@ -1,0 +1,98 @@
+.contacts {
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 40px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -21px;
+      left: 16px;
+      width: 116px;
+      height: 1px;
+      background-color: var(--light-gradiend-and-decorative-purple);
+    }
+  }
+  &__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 36px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    gap: 22px;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  &__input {
+    width: 300px;
+    height: 53px;
+    border: 2px solid var(--main-font-color-white);
+    border-radius: 40px;
+    background-color: transparent;
+    padding-left: 29px;
+    padding-right: 29px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-font-color-white);
+    outline: none;
+    &:not(:placeholder-shown):required {
+      border: 2px solid var(--dark-gradient-light-color);
+    }
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--main-font-color-white);
+    }
+  }
+  &__textarea {
+    width: 300px;
+    resize: none;
+    border: 2px solid var(--main-font-color-white);
+    border-radius: 40px;
+    background-color: transparent;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-font-color-white);
+    outline: none;
+    height: 219px;
+    &:not(:placeholder-shown) {
+      border: 2px solid var(--dark-gradient-light-color);
+    }
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--main-font-color-white);
+    }
+  }
+  &__btn {
+    width: 292px;
+    height: 48px;
+    border: none;
+    margin-top: 20px;
+  }
+}
