@@ -63,14 +63,18 @@ const sliderCreate = () => {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      spaceBetween: 30,
+      spaceBetween: 0,
       autoplay: {
         delay: 2000,
-        disableOnInteraction: false,
+        // disableOnInteraction: false,
       },
       breakpoints: {
         768: {
           slidesPerView: 2,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 0,
         }
       },
     });
