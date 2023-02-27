@@ -2,13 +2,23 @@
   padding-bottom: 81px;
   &__slider {
     position: relative;
-    // z-index: 22;
   }
   &__slide {
     display: flex;
     flex-direction: column;
-    padding-top: 19px;
     align-items: center;
+    justify-content: center;
+    @include max_1439 {
+      padding-top: 19px;
+    }
+    @include min_1440 {
+      width: 254px;
+    }
+  }
+  &__wrapper {
+    @include min_1440 {
+      justify-content: space-between;
+    }
   }
   &__num {
     font-size: 64px;
@@ -36,13 +46,24 @@
     @include max_1439 {
       display: none;
     }
+    margin-top: -30px;
+    stroke-width: 15px;
   }
   &__descr {
     margin-top: 57px;
+    @include min_1440 {
+      margin-top: 27px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: start;
+    }
   }
   &__title {
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
+    @include max_1439 {
+      text-align: center;
+    }
   }
 }
