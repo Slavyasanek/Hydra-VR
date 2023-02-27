@@ -54,8 +54,9 @@
       display: none;
     }
     margin-top: -30px;
-    stroke-width: 4px;
+    stroke-width: 2px;
     stroke: #c0b7e8;
+    animation: arrow-small 1500ms infinite alternate;
   }
   &__descr {
     margin-top: 57px;
