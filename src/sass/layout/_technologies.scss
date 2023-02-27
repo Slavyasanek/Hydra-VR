@@ -108,6 +108,7 @@
     height: 252px;
     @include min_1440 {
       height: auto;
+      width: 252px !important;
     }
   }
   &-wrapper {
