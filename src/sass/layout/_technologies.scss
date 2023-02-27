@@ -93,7 +93,7 @@
 .technologies__slider {
   margin-top: 20px;
   position: relative;
-  z-index: -1;
+  z-index: 22;
   height: 252px;
   width: auto;
   margin-bottom: 40px;
@@ -102,7 +102,7 @@
   }
   &-swiper {
     position: relative;
-    z-index: -1;
+    // z-index: -1;
   }
   &-slide {
     height: 252px;
