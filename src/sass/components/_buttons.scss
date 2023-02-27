@@ -52,26 +52,50 @@
   width: 44px;
   height: 44px;
   border: transparent;
-  position: absolute;
-  top: 50%;
   transition: all 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
   @extend %flex-center;
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active, 
+  &:disabled {
     background: var(--button-backlayer);
   }
-  &::before {
-    content: '';
+  &-bcg {
+    background: var(--button-backlayer);
     width: 62px;
     height: 62px;
     border-radius: 50%;
-    background-color: var(--button-backlayer);
     position: absolute;
-    z-index: -1;
-  }
-  &.swiper-button-prev {
-    left: -8px;
-  }
-  &.swiper-button-next {
-    right: -8px;
+    @extend %flex-center;
+    z-index: 444;
+    @include min_1440 {
+      display: none;
+    }
+    &.process-button-next {
+      bottom: 0px;
+      right: 0px;
+    }
+    &.process-button-prev {
+      bottom: 0px;
+      left: 0px;
+    }
+    &.tech-button-prev {
+      left: -25px;
+      bottom: 30px;
+    }
+    &.tech-button-next {
+      right: -25px;
+      bottom: 30px;
+    }
+    &.swiper-button-prev {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -15px;
+    }
+    &.swiper-button-next {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -15px;
+    }
   }
 }
