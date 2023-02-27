@@ -41,8 +41,8 @@
       gap: 30px;
     }
     &-arrow {
-      animation-name: arrow;
-      animation-duration: 1800ms;
+      animation-name: arrow-big;
+      animation-duration: 1000ms;
       animation-iteration-count: infinite;
       animation-direction: alternate;
       @include max_1439 {
