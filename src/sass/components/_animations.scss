@@ -1,9 +1,26 @@
 @keyframes arrow {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(40%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
+  100% {
+    transform: translateX(40%);
+  }
+}
+
+@keyframes arrow-small {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+@keyframes arrow-big {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
