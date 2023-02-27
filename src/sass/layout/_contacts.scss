@@ -5,15 +5,24 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 18px;
     &::after {
       content: '';
       position: absolute;
       bottom: -21px;
-      left: 16px;
+      left: 50%;
+      transform: translate(-50%);
       width: 116px;
       height: 1px;
       background-color: var(--light-gradiend-and-decorative-purple);
+      @include min_1440 {
+        width: 414px;
+        bottom: -30px;
+      }
+    }
+    @include min_1440 {
+      font-size: 36px;
+      margin-bottom: 18px;
     }
   }
   &__subtitle {
@@ -22,7 +31,10 @@
     line-height: 29px;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 36px;
+    margin-bottom: 14px;
+    @include min_1440 {
+        font-size: 32px;
+    }
   }
   &__form {
     display: flex;
@@ -35,11 +47,25 @@
     padding-top: 45px;
     padding-bottom: 65px;
     gap: 22px;
+    @include min_768 {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+    }
+    @include min_1440 {
+        gap: 33px;
+        padding: 90px 110px 84px 107px;
+    }
   }
   &__details {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    @include min_768 {
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+    }
   }
   &__input {
     width: 300px;
@@ -62,6 +88,12 @@
       font-size: 14px;
       line-height: 17px;
       color: var(--main-font-color-white);
+    }
+    @include min_768 {
+      width: 100%;
+    }
+    @include min_1440 {
+        height: 72px;
     }
   }
   &__textarea {
@@ -88,11 +120,21 @@
       line-height: 17px;
       color: var(--main-font-color-white);
     }
+    @include min_768 {
+      width: 100%;
+    }
+    @include min_1440 {
+        height: 210px;
+    }
   }
   &__btn {
     width: 292px;
     height: 48px;
     border: none;
     margin-top: 20px;
+    @include min_1440 {
+        width: 214px;
+        height: 48px;
+    }
   }
 }
