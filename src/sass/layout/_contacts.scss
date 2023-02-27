@@ -94,6 +94,8 @@
     }
     @include min_1440 {
         height: 72px;
+        padding-left: 42px;
+        padding-right: 42px;
     }
   }
   &__textarea {
@@ -125,6 +127,8 @@
     }
     @include min_1440 {
         height: 210px;
+        padding-left: 42px;
+        padding-top: 27px;
     }
   }
   &__btn {
