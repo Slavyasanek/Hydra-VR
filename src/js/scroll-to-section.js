@@ -1,6 +1,6 @@
 import { headerHeight } from "./header-scroll";
 
-menuLinks = document.querySelectorAll('a[data-goto]');
+const menuLinks = document.querySelectorAll('a[data-goto]');
 
 // ! Метод Element.getBoundingClientRect() 
 // повертає об’єкт DOMRect, надаючи інформацію 
@@ -20,7 +20,7 @@ if (menuLinks.length > 0) {
                 behavior: 'smooth'
             });
             const activeSection = document.querySelectorAll('.active');
-            console.log(activeSection);
+
             if (activeSection.length > 0) {
                 activeSection[0].classList.remove('active');
             }
