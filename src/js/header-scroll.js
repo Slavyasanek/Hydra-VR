@@ -1,4 +1,4 @@
-const header = document.querySelector('.header');
+export const header = document.querySelector('.header');
 
 export const headerHeight = header.offsetHeight;
 const makeHeader = () => {
@@ -10,3 +10,4 @@ const makeHeader = () => {
 }
 
 window.addEventListener("scroll", makeHeader);
+window.addEventListener('resize', makeHeader);
