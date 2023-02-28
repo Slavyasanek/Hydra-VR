@@ -1,6 +1,6 @@
 import { headerHeight } from "./header-scroll";
 
-menuLinks = document.querySelectorAll('[data-goto]');
+menuLinks = document.querySelectorAll('a[data-goto]');
 
 // ! Метод Element.getBoundingClientRect() 
 // повертає об’єкт DOMRect, надаючи інформацію 
@@ -10,6 +10,7 @@ menuLinks = document.querySelectorAll('[data-goto]');
 
 if (menuLinks.length > 0) {
     const onMenuLinkClick = (event) => {
+        event.preventDefault();
         const menuLink = event.target;
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const goToBlock = document.querySelector(menuLink.dataset.goto);
@@ -18,11 +19,15 @@ if (menuLinks.length > 0) {
                 top: goToBlockValue - 20,
                 behavior: 'smooth'
             });
-            event.preventDefault();
+            const activeSection = document.querySelectorAll('.active');
+            console.log(activeSection);
+            if (activeSection.length > 0) {
+                activeSection[0].classList.remove('active');
+            }
+            menuLink.parentNode.classList.add('active');
         }
     }
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
     });
 }
-

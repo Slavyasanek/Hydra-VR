@@ -75,7 +75,7 @@
       border-radius: 2px;
       background-color: var(--light-gradiend-and-decorative-purple);
     }
-    &:hover {
+    &:hover, &.active {
       color: var(--light-gradiend-and-decorative-purple);
       &::before {
         width: 100%;
