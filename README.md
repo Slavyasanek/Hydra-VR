@@ -4,5 +4,4 @@ Landing page of VR company, which will provide you smooth scroll, adaptive slide
 
 ## Parcel
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+This project was created with Parcel. For familiarization and setting additional features [refer to documentation](https://parceljs.org/).
