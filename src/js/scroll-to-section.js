@@ -1,4 +1,5 @@
 import { headerHeight } from "./header-scroll";
+import { openBtnMenu, mobileMenu } from "./mobile-menu";
 
 const menuLinks = document.querySelectorAll('a[data-goto]');
 
@@ -19,6 +20,12 @@ if (menuLinks.length > 0) {
                 top: goToBlockValue - 20,
                 behavior: 'smooth'
             });
+            if(openBtnMenu.classList.contains('active')) {
+                document.body.classList.remove('lock');
+                mobileMenu.classList.remove('active');
+                openBtnMenu.classList.remove('active');
+            }
+            
             const activeSection = document.querySelectorAll('.active');
 
             if (activeSection.length > 0) {

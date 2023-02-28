@@ -16,8 +16,12 @@
   &__open {
     fill: url('#paint--reverse');
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
     @include min_768 {
       display: none;
+    }
+    &.active {
+        transform: rotate(-90deg);
     }
   }
   &--flex {
@@ -39,26 +43,13 @@
     transition: color 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
     position: relative;
     cursor: pointer;
-    &::before {
-      transition: width 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94),
-        left 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94),
-        right 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
-      content: '';
-      position: absolute;
-      top: 20px;
-      right: 50%;
-      height: 4px;
-      width: 0;
-      border-radius: 2px;
-      background-color: var(--light-gradiend-and-decorative-purple);
-    }
-    &:hover,
-    &.active {
+    display: block;
+    &:hover {
       color: var(--light-gradiend-and-decorative-purple);
-      &::before {
-        width: 100%;
-        right: 0;
-      }
     }
   }
+}
+
+body.lock {
+    overflow: hidden;
 }
