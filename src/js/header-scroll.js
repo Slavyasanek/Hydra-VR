@@ -1,8 +1,8 @@
 const header = document.querySelector('.header');
 
-const headerToTop = header.offsetTop;
+export const headerHeight = header.offsetHeight;
 const makeHeader = () => {
-    if (Number.parseInt(window.pageYOffset) >= 190 ) {
+    if (Number.parseInt(window.pageYOffset) >= headerHeight) {
         header.classList.add("header--background");
     } else {
         header.classList.remove("header--background");
