@@ -1,6 +1,6 @@
 # Hydra VR - the best VR experience
 
-Landing page of VR company, which will provide you smooth scroll, adaptive sliders on tablet, mobile versions and convinient mobile menu. Web-site is fully adapted for any devices. 
+Landing page of VR company, which will provide you smooth scroll, adaptive sliders on tablet, mobile versions and convenient mobile menu. Web-site is fully adapted for any devices. 
 
 ## Parcel
 
