@@ -7,12 +7,13 @@
   width: 347px;
   height: 109px;
   background: radial-gradient(
-    50% 2900.76% at 50% 53.89%,
-    var(--dark-gradient-light-color) 0%,
-    var(--dark-gradient-violet) 100%
+    circle at center,
+    var(--dark-gradient-light-color) 30%,
+    var(--dark-gradient-violet) 90%
   );
   box-shadow: 0px 4px 4px var(--box-shadow);
   border-radius: 90px;
+  
   @include min_768 {
     width: 500px;
   }
@@ -21,6 +22,9 @@
     height: 167px;
     display: flex;
     align-items: center;
+    background: linear-gradient(89deg, #211e2e 40%, #5c5385 45%, #211e2e 55%);
+    background-size: 600% 600%;
+    animation: gradient-bcg 10s ease-in-out infinite alternate;
   }
   &__slider {
     @include min_1440 {
