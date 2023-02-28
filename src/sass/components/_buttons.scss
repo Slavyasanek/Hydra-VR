@@ -15,6 +15,10 @@
     color: var(--main-bcg);
     background-color: var(--main-font-color-white);
   }
+  @include max_767 {
+    width: inherit;
+    height: 48px;
+  }
 }
 
 .btn--gradient {
