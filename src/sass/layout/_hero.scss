@@ -136,6 +136,8 @@
     @include max_767 {
       display: none;
     }
+    stroke-width: 1px;
+    stroke: var(--light-gradiend-and-decorative-purple);
     animation-name: arrow;
     animation-duration: 1800ms;
     animation-iteration-count: infinite;
