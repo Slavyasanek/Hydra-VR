@@ -16,7 +16,7 @@ const sliderCreate = () => {
     })
     const sliderContacts = new Swiper('[data-slider="slider-connect"]', {
       speed: 1500,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -58,7 +58,7 @@ const sliderCreate = () => {
     });
     const sliderTech = new Swiper('[data-slider="slider-tech"]', {
       speed: 2000,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: '.tech-button-next',
         prevEl: '.tech-button-prev',
@@ -80,7 +80,7 @@ const sliderCreate = () => {
     });
     const sliderProc = new Swiper('[data-slider="slider-process"]', {
       speed: 2000,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: '.process-button-next',
         prevEl: '.process-button-prev',
