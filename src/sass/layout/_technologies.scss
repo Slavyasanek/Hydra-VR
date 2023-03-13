@@ -72,9 +72,6 @@
   transition: all 0.5s cubic-bezier(0.76, 0.49, 0.33, 0.94);
   transform: translate(-50%);
   @extend %flex-center;
-  &:hover, &:focus, &:active {
-    background: var(--button-backlayer);
-  }
   &::before {
     content: "";
     position: absolute;
